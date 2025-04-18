@@ -5,7 +5,7 @@ int main() {
     printf("--- Movimento da Torre ---\n");
     int casasTorre = 5;
     for (int i = 0; i < casasTorre; i++) {
-        printf("Direita\n"); // Torre se move cinco casas para a direita
+        printf("Direita\n");
     }
     printf("\n");
 
@@ -14,7 +14,7 @@ int main() {
     int casasBispo = 5;
     int j = 0;
     while (j < casasBispo) {
-        printf("Cima, Direita\n"); // Bispo se move cinco casas na diagonal para cima e à direita
+        printf("Cima, Direita\n");
         j++;
     }
     printf("\n");
@@ -24,9 +24,27 @@ int main() {
     int casasRainha = 8;
     int k = 0;
     do {
-        printf("Esquerda\n"); // Rainha se move oito casas para a esquerda
+        printf("Esquerda\n");
         k++;
     } while (k < casasRainha);
+    printf("\n");
+
+    // --- Movimento do Cavalo ---
+    printf("--- Movimento do Cavalo ---\n");
+    int movimentoBaixo = 2;
+    int movimentoEsquerda = 1;
+
+    // Primeiro movimento: duas casas para baixo (usando loop for)
+    for (int l = 0; l < movimentoBaixo; l++) {
+        printf("Baixo\n");
+    }
+
+    // Segundo movimento: uma casa para a esquerda (usando loop do-while)
+    int m = 0;
+    do {
+        printf("Esquerda\n");
+        m++;
+    } while (m < movimentoEsquerda);
     printf("\n");
 
     return 0;
